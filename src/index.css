@@ -264,7 +264,7 @@ tbody tr.total-row td:first-child {
 }
 /* ==== Anchos estándar de inputs ==== */
 :root{
-  --w-num: 8ch;     /* ~5 dígitos cómodos */
+  --w-num: 10ch;     /* ~5 dígitos cómodos */
   --w-meta: 12ch;   /* ~8 dígitos para la meta */
 }
 
