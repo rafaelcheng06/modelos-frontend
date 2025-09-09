@@ -10,6 +10,7 @@
     "allowJs": false,
     "isolatedModules": true,
     "noEmit": true,
+    "allowImportingTsExtensions": true,
 
     // 👉 Relajamos chequeos que rompen en Vercel por TS6133/TS6138
     "noUnusedLocals": false,
