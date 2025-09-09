@@ -1589,7 +1589,10 @@ export default function ModelDashboard() {
       {/* Guardar (más adelante, cuando definamos columnas de producción reales) */}
       <div style={{ marginTop: 12 }}>
         <button
-          onClick={handleSaveAll}
+          onClick={async () => {
+            await handleSaveAll();
+            window.location.reload();
+          }}
           className="px-4 py-2 bg-blue-600 text-white rounded"
         >
           Guardar cambios
