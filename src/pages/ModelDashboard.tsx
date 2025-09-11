@@ -505,7 +505,10 @@ export default function ModelDashboard() {
           }
 
           // 4) Unir básicos + automáticos
-          setDiscountRows([...(rows ?? []), ...auto]);
+          setDiscountRows([
+            ...(rows ?? []),
+            ...auto.filter((a) => !(rows ?? []).some((r) => r.name === a.name)),
+          ]);
         }
         console.log(
           "[filas]",
